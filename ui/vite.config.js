@@ -50,10 +50,10 @@ export default defineConfig({
 // PWA manifest
 function manifest() {
   return {
-    name: 'Navidrome',
-    short_name: 'Navidrome',
+    name: 'Holiness Stream',
+    short_name: 'Holiness Stream',
     description:
-      'Navidrome, an open source web-based music collection server and streamer',
+      'Holiness Stream, an open source web-based music collection server and streamer',
     categories: ['music', 'entertainment'],
     display: 'standalone',
     start_url: './',
