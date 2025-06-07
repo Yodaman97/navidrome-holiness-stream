@@ -20,13 +20,10 @@ import subsonic from '../subsonic/index.js'
 import { Typography } from '@material-ui/core'
 
 const links = {
-  homepage: 'navidrome.org',
-  reddit: 'reddit.com/r/Navidrome',
-  twitter: 'twitter.com/navidrome',
-  discord: 'discord.gg/xh7j7yF',
-  source: 'github.com/navidrome/navidrome',
-  bugReports: 'github.com/navidrome/navidrome/issues/new/choose',
-  featureRequests: 'github.com/navidrome/navidrome/discussions/new',
+  homepage: 'holiness.stream',
+  source: 'github.com/holiness/holiness-stream',
+  bugReports: 'github.com/holiness/holiness-stream/issues/new/choose',
+  featureRequests: 'github.com/holiness/holiness-stream/discussions/new',
 }
 
 const LinkToVersion = ({ version }) => {
@@ -38,10 +35,10 @@ const LinkToVersion = ({ version }) => {
   const commitID = parts[1].replace(/[()]/g, '')
   const isSnapshot = version.includes('SNAPSHOT')
   const url = isSnapshot
-    ? `https://github.com/navidrome/navidrome/compare/v${
+    ? `https://github.com/holiness/holiness-stream/compare/v${
         parts[0].split('-')[0]
       }...${commitID}`
-    : `https://github.com/navidrome/navidrome/releases/tag/v${parts[0]}`
+    : `https://github.com/holiness/holiness-stream/releases/tag/v${parts[0]}`
   return (
     <>
       <Link href={url} target="_blank" rel="noopener noreferrer">
@@ -121,7 +118,7 @@ const AboutDialog = ({ open, onClose }) => {
   return (
     <Dialog onClose={onClose} aria-labelledby="about-dialog-title" open={open}>
       <DialogTitle id="about-dialog-title" onClose={onClose}>
-        Navidrome Music Server
+        Holiness Stream
       </DialogTitle>
       <DialogContent dividers>
         <TableContainer component={Paper}>
